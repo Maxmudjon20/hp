@@ -1,0 +1,58 @@
+.footer{
+    margin-top: 158px;
+    background-color: var(--color-lightblack);
+
+    .container{
+        display: flex;
+        align-items: center;
+    }
+
+    &__img{
+        padding: 20px 0px;
+    }
+}
+
+.navber{
+
+    &__list{
+        display: flex;
+        align-items: center;
+        margin-left: 102px;
+    }
+
+    &__item + &__item{
+        padding-left: 33px;
+        
+    }
+
+    &__link{
+        color: var(--color-grey);
+        font-family: "Barlow";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15px;
+        text-transform: uppercase;
+        
+
+        &:hover{
+            color: var(--color-black);
+        }
+    }
+
+    &__info{
+        margin-left: 369px;
+    }
+
+    &__schedule + &__schedule{
+        margin-left: 24px;
+    }
+
+    path{
+        transition: all 0.7s ease;
+
+        &:hover{
+            fill: var(--color-lightgreen);
+        }
+    }
+}

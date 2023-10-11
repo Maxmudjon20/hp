@@ -1,0 +1,62 @@
+.hero {
+
+    z-index: -1;
+    
+    .container {
+        width: 1280px;
+        height: 450px;
+        background-image: url("../img/Coffee_Img.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 10px;
+    }
+
+   margin-top: 60px;
+}
+
+
+.hero__info {
+    width: 500px;
+    padding: 0;
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 85px;
+
+    &--heading {
+        color: var(--color-whiteout);
+        font-family: "Fraunces";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 48px;
+    }
+
+    &--text {
+        color: var(--color-whiteout);
+        font-family: "Barlow";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+    }
+}
+
+@media  
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (   min--moz-device-pixwl-ratio:2),
+only screen and (     -o-min-device-pixel-ratio:2/1),
+only screen and (        min-device-pixel-ratio:2),
+only screen and (                min-resolution:192dpi),
+only screen and (                min-resolution:2ddpx){
+
+    .hero {
+        .container{
+            background-image: url(../img/feys.png_2x);
+            width: 1280px;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border-radius: 10px;
+        }
+    }
+}

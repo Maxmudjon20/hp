@@ -1,0 +1,548 @@
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  padding: 20px;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__item + .nav__item {
+  padding-left: 33px;
+}
+.nav__link {
+  color: var(--color-grey);
+  font-family: Barlow;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.923px;
+  text-transform: uppercase;
+}
+.nav__link:hover {
+  color: var(--color-black);
+}
+
+.nav__button {
+  display: none;
+}
+
+.header__response {
+  display: none;
+}
+
+@media only screen and (max-width: 634px) {
+  .nav {
+    display: none;
+  }
+  .nav__button {
+    display: block;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header__logo {
+    display: none;
+  }
+  .header__response {
+    display: block;
+  }
+}
+.hero {
+  z-index: -1;
+  margin-top: 60px;
+}
+.hero .container {
+  width: 1280px;
+  height: 450px;
+  background-image: url("../img/Coffee_Img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 10px;
+}
+
+.hero__info {
+  width: 500px;
+  padding: 0;
+  margin: 0;
+  padding-top: 100px;
+  padding-left: 85px;
+}
+.hero__info--heading {
+  color: var(--color-whiteout);
+  font-family: "Fraunces";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px;
+}
+.hero__info--text {
+  color: var(--color-whiteout);
+  font-family: "Barlow";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixwl-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2ddpx) {
+  .hero .container {
+    background-image: url(../img/feys.png_2x);
+    width: 1280px;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+  }
+}
+.about {
+  z-index: -1;
+  margin-top: 160px;
+}
+.about .container {
+  display: flex;
+}
+.about__img {
+  margin-left: 85px;
+  border-radius: 8px;
+}
+.about__info {
+  padding-left: 125px;
+  padding-top: 90px;
+  width: 560px;
+}
+.about__heading {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 32px;
+  color: var(--color-dimgrey);
+  font-family: "Fraunces";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px;
+}
+.about__text {
+  padding: 0;
+  margin: 0;
+  color: var(--color-dimgrey);
+  font-family: "Barlow";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.fizik {
+  z-index: -1;
+  margin-top: 158px;
+}
+.fizik .container {
+  width: 1280px;
+  height: 474px;
+  background-color: var(--color-lightblack);
+  position: relative;
+  border-radius: 8px;
+}
+.fizik__image {
+  width: 445px;
+  height: 474px;
+  background-image: url("../img/Brawn_Coffee.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  transform: translate(725px, -84px);
+}
+.fizik__info {
+  width: 599px;
+  margin: 0;
+  padding: 0;
+  padding-left: 85px;
+  padding-top: 88px;
+}
+.fizik__heading {
+  color: var(--color-whiteout);
+  font-family: "Fraunces";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px;
+}
+.fizik__text {
+  margin: 0;
+  padding: 0;
+  color: var(--color-whiteout);
+  font-family: "Barlow";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  opacity: 0.8;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixwl-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2ddpx) {
+  .phonk__image {
+    background-image: url(../img/Brawn_Cofe.png);
+  }
+}
+.mouse {
+  z-index: -1;
+  margin-top: 158px;
+}
+.mouse .container {
+  padding-left: 85px;
+}
+.mouse__title {
+  padding-bottom: 72px;
+  color: var(--color-grey);
+  font-family: "Fraunces";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 32px;
+}
+.mouse__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.mouse__img {
+  margin-bottom: 45px;
+}
+.mouse__heading {
+  color: var(--color-dimgrey);
+  font-family: "Fraunces";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 36px;
+}
+.mouse__text {
+  color: var(--color-dimgrey);
+  font-family: "Barlow";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.footer {
+  margin-top: 158px;
+  background-color: var(--color-lightblack);
+}
+.footer .container {
+  display: flex;
+  align-items: center;
+}
+.footer__img {
+  padding: 20px 0px;
+}
+
+.navber__list {
+  display: flex;
+  align-items: center;
+  margin-left: 102px;
+}
+.navber__item + .navber__item {
+  padding-left: 33px;
+}
+.navber__link {
+  color: var(--color-grey);
+  font-family: "Barlow";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.navber__link:hover {
+  color: var(--color-black);
+}
+.navber__info {
+  margin-left: 369px;
+}
+.navber__schedule + .navber__schedule {
+  margin-left: 24px;
+}
+.navber path {
+  transition: all 0.7s ease;
+}
+.navber path:hover {
+  fill: var(--color-lightgreen);
+}
+
+/* barlow-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* barlow-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/barlow-v12-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fraunces-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/fraunces-v31-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* fraunces-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/fraunces-v31-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", "sans-serif";
+  font-size: 18px;
+  line-height: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+form {
+  margin-left: 40px;
+}
+
+button {
+  margin-bottom: 200px;
+  display: inline-block;
+}
+
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+:root {
+  --color-grey: #83888F;
+  --color-whiteout: #FEFCF7;
+  --color-lightblack: #2C343E;
+  --color-lightgreen: yellowgreen;
+  --color-dimgrey: #333D4B;
+  --color-black: #000000;
+}/*# sourceMappingURL=main.min.css.map */
